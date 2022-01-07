@@ -1,0 +1,61 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --dark: #292c35;
+  --light: #f1f1f1;
+  --label: #111;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Black background with img inside */
+div.toggle {
+  background-color: #000000;
+  width: 14.75rem;
+  height: 6.5rem;
+  border-radius: 3.7rem;
+
+  padding: 0.3rem;
+}
+
+input.checkbox {
+  /* display: none; */
+  position: absolute;
+  opacity: 0;
+}
+
+label.label {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  position: relative;
+}
+
+img {
+  width: 5.85rem;
+  height: 5.85rem;
+}
+
+/* Create switch ball */
+div.switch {
+  background: white;
+  border-radius: 50%;
+
+  width: 5.8rem;
+  height: 5.8rem;
+
+  top: 0.1rem;
+  left: 0.1rem;
+
+  position: absolute;
+}
