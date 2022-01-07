@@ -15,6 +15,13 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
+  background: var(--light);
+
+  transition: background 0.3s linear;
+}
+
+body.dark {
+  background: var(--dark);
 }
 
 /* Black background with img inside */
@@ -31,6 +38,10 @@ input.checkbox {
   /* display: none; */
   position: absolute;
   opacity: 0;
+}
+
+input.checkbox:checked + .label .switch {
+  transform: translateX(8.2rem);
 }
 
 label.label {
@@ -58,4 +69,5 @@ div.switch {
   left: 0.1rem;
 
   position: absolute;
+  transition: transform 0.3s linear;
 }
